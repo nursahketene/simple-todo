@@ -1,0 +1,17 @@
+flow.tmproj
+.bundle
+.DS_Store
+**/.DS_Store
+db/*.sqlite3
+log/*.log
+tmp/**/*
+coverage.data
+coverage/*
+coverage/**/*
+spec/reports/*
+spec/reports/**/*
+db/*.sqlite3
+Gemfile.lock
+db/backups
+doc/toimitetut_excelit
+public/system

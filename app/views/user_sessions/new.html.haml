@@ -1,0 +1,27 @@
+#modal
+
+  .modal-screen
+
+  #login.group
+    - if flash[:error]
+      %p.message.red= flash[:error]
+    
+    - if flash[:notice]
+      %p.message.green= flash[:notice]
+    
+    = form_for @user_session, :url => user_session_path, :id => 'loginform' do |f|
+      %p.title= t '.login'
+      %p
+        = f.text_field 'login', :size => nil, :id => 'user_login'
+      %p
+        = f.password_field 'password', :size => nil, :id => 'user_pass'
+      
+      %p.submit
+        = f.submit t('action.login'), :class=> 'button'
+      %div{:style => "clear:both"}
+
+:javascript
+  $(document).ready(function() {
+    $("#user_login").watermark("#{t(:username)}");
+    $("#user_pass").watermark("#{t(:password)}");
+  });

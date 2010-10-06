@@ -1,0 +1,10 @@
+body { font-family: Helvetica, Arial, Verdana, sans-serif; line-height: 1.6; font-size: 75%; }
+
+h2 { margin: 0 0 0.2em 0; font-size: 150%; letter-spacing: -1px; font-weight: normal; clear: left; color: #4e463f; }
+
+a { color: #333333; font-weight: normal; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.clear { clear: both; }
+
+.float-right { float: right !important; }
