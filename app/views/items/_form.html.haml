@@ -1,23 +1,13 @@
 = form_for(@item) do |f|
-  - if @item.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(@item.errors.count, "error")
-        prohibited this item from being saved:
-      %ul
-        - @item.errors.full_messages.each do |msg|
-          %li= msg
-  .field
-    = f.label :title
-    %br/
-    = f.text_field :title
-  .field
-    = f.label :body
-    %br/
-    = f.text_area :body
-  .field
-    = f.label :done
-    %br/
-    = f.check_box :done
-  .actions
-    = f.submit
+  
+
+  %h1= title
+  
+  %p.title= t '.title'
+  %p.required
+    = f.text_field :title, :size => nil, :class => "text title"
+
+  %p.submit
+    = f.submit t('action.save'), :class=> 'button'
+    tai
+    = link_to_function "Peruuta", "$('#editor').fadeOut()"

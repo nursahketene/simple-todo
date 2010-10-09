@@ -2,12 +2,24 @@
 %html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}
-    %title Half Day Nation
+    %meta{ :content => "en", :"http-equiv" => "Content-Language" }
+    %title EfiCode Todo
+    
     = javascript_include_tag :defaults
-    
     = csrf_meta_tag
-    
-    = stylesheet_link_tag 'screen'
+    = stylesheet_link_tag 'reset', 'screen'
     
   %body
-    = yield
+
+    #header
+      %h1 title
+      %address.watermark
+        
+        %a{ :href => "http://eficode-todo.heroku.com", :title => "The Todo App" } Todo
+
+    #content
+      #editor{:style => "display:none;"}
+      
+      = yield
+
+

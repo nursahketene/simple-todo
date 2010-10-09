@@ -1,7 +1,7 @@
 Todo::Application.routes.draw do
   resources :items
 
-  root :to => "home#index"
+  root :to => "items#index"
   
   
   resources :users

@@ -9,12 +9,12 @@
     - if flash[:notice]
       %p.message.green= flash[:notice]
     
-    = form_for @user_session, :url => user_session_path, :id => 'loginform' do |f|
+    = form_for @user_session, :url => user_session_path, :class => 'login' do |f|
       %p.title= t '.login'
-      %p
-        = f.text_field 'login', :size => nil, :id => 'user_login'
-      %p
-        = f.password_field 'password', :size => nil, :id => 'user_pass'
+      %p.required
+        = f.text_field 'login', :size => nil, :id => 'user_login', :class => "text"
+      %p.required
+        = f.password_field 'password', :size => nil, :id => 'user_pass', :class => "text"
       
       %p.submit
         = f.submit t('action.login'), :class=> 'button'

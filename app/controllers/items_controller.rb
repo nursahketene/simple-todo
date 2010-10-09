@@ -1,4 +1,6 @@
 class ItemsController < ApplicationController
+  before_filter :require_user
+  
   def index
     @items = Item.all
   end
@@ -19,7 +21,7 @@ class ItemsController < ApplicationController
     @item = Item.new(params[:item])
 
     if @item.save
-      redirect_to(@item, :notice => 'Item was successfully created.')
+      redirect_to(items_path, :notice => 'Item was successfully created.')
     else
       render :action => "new"
     end
@@ -29,7 +31,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     
     if @item.update_attributes(params[:item])
-      redirect_to(@item, :notice => 'Item was successfully updated.')
+      redirect_to(items_path, :notice => 'Item was successfully updated.')
     else
       render :action => "edit"
     end

@@ -11,4 +11,12 @@ gem "authlogic", :git => 'git://github.com/odorcicd/authlogic.git', :branch => '
 
 group :test, :development do
   gem "rspec-rails", ">= 2.0.0.beta.22"
+  
+  gem "ci_reporter"
+  
+  gem "cucumber"
+  gem "cucumber-rails"
+  gem "capybara"
+  gem "culerity"
+  gem "celerity", :require => nil
 end
