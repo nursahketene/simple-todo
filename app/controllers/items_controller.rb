@@ -2,7 +2,14 @@ class ItemsController < ApplicationController
   before_filter :require_user
   
   def index
-    @items = Item.all
+    @todo = Item.todo
+    @done = Item.done
+  end
+  
+  def done
+    @item = Item.find(params[:id])
+    @item.update_attributes(:done => true)
+    redirect_to items_path
   end
 
   def show

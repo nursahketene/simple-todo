@@ -1,13 +1,12 @@
 = form_for(@item) do |f|
   
 
-  %h1= title
+  %h2= title
   
-  %p.title= t '.title'
   %p.required
     = f.text_field :title, :size => nil, :class => "text title"
 
   %p.submit
     = f.submit t('action.save'), :class=> 'button'
     tai
-    = link_to_function "Peruuta", "$('#editor').fadeOut()"
+    = link_to_function "Peruuta", "hideEditor()"

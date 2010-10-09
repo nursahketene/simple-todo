@@ -1,9 +1,15 @@
 
+#new= link_to t('items.actions.new'), new_item_path, :remote => true
+
 %ul#projects
-  - @items.each do |item|
+  - @todo.each do |item|
     %li.even.success
       .line-content
-        %input.checkbox{:type => "checkbox"}
         = link_to item.title, edit_item_path(item), :remote => true
+        %span= link_to t('items.actions.done'), done_item_path(item)
 
-= link_to 'New Item', new_item_path, :remote => true
+%ul#projects
+  - @done.each do |item|
+    %li.even
+      .line-content
+        = link_to item.title, edit_item_path(item), :remote => true

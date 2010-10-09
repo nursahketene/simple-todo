@@ -3,7 +3,7 @@ class CreateItems < ActiveRecord::Migration
     create_table :items do |t|
       t.string :title
       t.text :body
-      t.boolean :done
+      t.boolean :done, :default => false
 
       t.timestamps
     end

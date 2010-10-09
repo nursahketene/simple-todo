@@ -1,5 +1,7 @@
 Todo::Application.routes.draw do
-  resources :items
+  resources :items do
+    get :done, :on => :member
+  end
 
   root :to => "items#index"
   

@@ -10,6 +10,9 @@ en:
       login: "Kirjaudu järjestelmään"
 
   items:
+    actions:
+      new: "Lisää uusi tehtävä"
+      done: "Valmis"
     form:
       title: "Tehtävä"
     new:

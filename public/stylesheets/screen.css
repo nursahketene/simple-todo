@@ -22,11 +22,11 @@ a { color: #ed1556; text-decoration: none; }
 #content h4, #content h5, #content h6 { font-weight: bold; margin-top: 0.5em; }
 #content code, #content pre, #content textarea, #content input { font-family: Monaco, Deja Vu Sans Mono, Inconsolata, Consolas, monospace; }
 #content pre { margin: 0.5em; padding: 0.5em; }
+#content form { border-bottom: 1px solid silver; }
 #content form p { margin-top: 1em; position: relative; }
 #content form p.checkbox label { margin-top: 0 !important; }
 #content form .close { position: absolute; top: 0; right: 0; }
 #content form input.text, #content form textarea, #content form select { padding: 0.2em 0.4em; color: #4e4e4e; }
-#content form .checkbox { height: 1.4em; }
 #content form input.text { height: 1.4em; }
 #content form input.title { width: 25.6em; }
 #content form label { float: left; display: block; margin-top: 0.5em; width: 8em; margin-right: 0.75em; }
@@ -56,11 +56,13 @@ a { color: #ed1556; text-decoration: none; }
 #content .error dt { margin-top: 1.4em; margin-bottom: 0.3em; font-size: 1.75em; font-family: Georgia, Times New Roman, serif; }
 #content .error dd { line-height: 1.4; }
 #content .error .backtrace { margin: 1em 0; overflow: "scroll"; height: 30em; border: 1px solid silver; line-height: 1.6; }
+#content #new { width: 100%; text-align: right; }
 #content #projects { margin: 1em 0 2em; border-top: 1px solid silver; }
 #content #projects li { position: relative; border-bottom: 1px solid silver; }
 #content #projects li.odd { background: #e6e6e6; }
 #content #projects li div { padding: 0.25em; display: block; background-color: #bbf8aa; }
-#content #projects li a { font-size: 2em; line-height: 1.2; font-weight: bold; }
+#content #projects li a { font-size: 2em; line-height: 1.2em; font-weight: bold; }
+#content #projects li span { font-size: 0.6em; margin-top: 6px; float: right; }
 #content #projects li .meta { position: absolute; right: 0.6em; top: 1.5em; font-size: 0.8em; color: #999999; text-align: right; }
 #content #previous_builds li a { display: block; padding: 0.25em; margin-bottom: 0.25em; border-width: 1px; border-style: solid; }
 #content #previous_builds li a strong { font-size: 1.3em; }
