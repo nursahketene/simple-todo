@@ -13,7 +13,7 @@ group :test, :development do
   gem "rspec-rails", ">= 2.0.0.beta.22"
   gem "factory_girl_rails"
   
-  gem "ci_reporter"
+  gem "ci_reporter", :git => "git://github.com/tylerkovacs/ci_reporter.git"
   
   gem "cucumber"
   gem "cucumber-rails"

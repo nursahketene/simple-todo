@@ -20,6 +20,15 @@ describe ItemsController do
     end
   end
 
+  describe "GET done" do
+    it "sets the Item to state done" do
+      @item = Factory(:item)
+      Item.stub(:find) { @item }
+      get :done, :id => "1"
+      @item.done.should eq(true)
+    end
+  end
+  
   describe "GET show" do
     it "assigns the requested item as @item" do
       Item.stub(:find).with("37") { mock_item }
