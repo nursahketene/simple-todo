@@ -5,12 +5,18 @@ describe ItemsController do
   def mock_item(stubs={})
     @mock_item ||= mock_model(Item, stubs).as_null_object
   end
+  
+  before :each do
+    controller.stub!(:require_user).and_return(true)
+  end
 
   describe "GET index" do
     it "assigns all items as @items" do
-      Item.stub(:all) { [mock_item] }
+      Item.stub(:todo) { [mock_item] }
+      Item.stub(:done) { [] }
       get :index
-      assigns(:items).should eq([mock_item])
+      assigns(:todo).should eq([mock_item])
+      assigns(:done).should eq([])
     end
   end
 
@@ -50,7 +56,7 @@ describe ItemsController do
       it "redirects to the created item" do
         Item.stub(:new) { mock_item(:save => true) }
         post :create, :item => {}
-        response.should redirect_to(item_url(mock_item))
+        response.should redirect_to(items_url)
       end
     end
 
@@ -88,7 +94,7 @@ describe ItemsController do
       it "redirects to the item" do
         Item.stub(:find) { mock_item(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(item_url(mock_item))
+        response.should redirect_to(items_url)
       end
     end
 

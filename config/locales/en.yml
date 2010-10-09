@@ -1,6 +1,7 @@
 en:
   action:
     login: "Kirjaudu"
+    logout: "Kirjaudu ulos"
     save: "Tallenna"
   
   user_sessions:
@@ -12,7 +13,7 @@ en:
   items:
     actions:
       new: "Lisää uusi tehtävä"
-      done: "Valmis"
+      done: "Merkitse valmiiksi"
     form:
       title: "Tehtävä"
     new:

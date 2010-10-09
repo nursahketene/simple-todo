@@ -11,6 +11,7 @@ gem "authlogic", :git => 'git://github.com/odorcicd/authlogic.git', :branch => '
 
 group :test, :development do
   gem "rspec-rails", ">= 2.0.0.beta.22"
+  gem "factory_girl_rails"
   
   gem "ci_reporter"
   

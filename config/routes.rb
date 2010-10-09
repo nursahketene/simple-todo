@@ -5,8 +5,6 @@ Todo::Application.routes.draw do
 
   root :to => "items#index"
   
-  
-  resources :users
   resource :user_session
   match '/login' => 'user_sessions#new', :as => :login
   match '/logout' => 'user_sessions#destroy', :as => :logout

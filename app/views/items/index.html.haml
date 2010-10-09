@@ -1,15 +1,12 @@
 
 #new= link_to t('items.actions.new'), new_item_path, :remote => true
 
-%ul#projects
-  - @todo.each do |item|
-    %li.even.success
-      .line-content
-        = link_to item.title, edit_item_path(item), :remote => true
-        %span= link_to t('items.actions.done'), done_item_path(item)
+- if @todo.blank?
+  %h3 Ei tekemättömiä tehtäviä
+- else
+  %ul#projects.todo
+    = render :partial => 'item', :collection => @todo
 
-%ul#projects
-  - @done.each do |item|
-    %li.even
-      .line-content
-        = link_to item.title, edit_item_path(item), :remote => true
+%ul#projects.done
+  - unless @done.blank?
+    = render :partial => 'item', :collection => @done

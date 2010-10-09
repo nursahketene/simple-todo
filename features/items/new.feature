@@ -6,7 +6,7 @@ Feature: Adding a new Todo Item
   @javascript
   Scenario: Adding a new Item
     Given I am an authenticated user
-    When I follow "New Item"
-      And I fill in "title" with "Osta Maitoa"
+    When I follow "Lisää uusi tehtävä"
+      And I fill in "item_title" with "Osta Maitoa"
       And I press "Tallenna"
     Then I should see "Osta Maitoa"
