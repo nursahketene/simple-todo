@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'http://gemcutter.org'
 
 gem 'rails', '3.0.0'
 
@@ -13,7 +13,7 @@ group :test, :development do
   gem "rspec-rails", "2.0.0"
   gem "factory_girl_rails"
   
-  gem "ci_reporter", :git => "git://github.com/tylerkovacs/ci_reporter.git"
+  gem "ci_reporter", :git => "git@github.com:mrako/ci_reporter.git"
   
   gem 'capybara'
   gem 'database_cleaner'
