@@ -10,7 +10,7 @@ gem "authlogic", :git => 'git://github.com/odorcicd/authlogic.git', :branch => '
 
 
 group :test, :development do
-  gem "rspec-rails", ">= 2.0.0.rc"
+  gem "rspec-rails", "2.0.0"
   gem "factory_girl_rails"
   
   gem "ci_reporter", :git => "git://github.com/tylerkovacs/ci_reporter.git"
