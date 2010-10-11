@@ -4,9 +4,8 @@
   %h2= title
   
   %p.required
-    = f.text_field :title, :size => nil, :class => "text title"
+    = f.text_field :title, :size => nil, :id => "title", :class => "text title"
 
   %p.submit
     = f.submit t('action.save'), :class=> 'button'
-    tai
-    = link_to_function "Peruuta", "hideEditor()"
+    %span tai #{link_to_function "Peruuta", "hideEditor()"}

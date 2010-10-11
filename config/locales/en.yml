@@ -13,7 +13,7 @@ en:
   items:
     actions:
       new: "Lisää uusi tehtävä"
-      done: "Merkitse valmiiksi"
+      done: "Valmis"
     form:
       title: "Tehtävä"
     new:

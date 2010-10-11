@@ -24,7 +24,7 @@ a:hover { text-decoration: underline; }
 #wrapper h2 { font-weight: bold; font-size: 1.5em; margin: 0 0 0.2em; }
 #wrapper h3 { font-weight: bold; font-size: 1.25em; margin: 0.25em 0; }
 #wrapper h4, #wrapper h5, #wrapper h6 { font-weight: bold; margin-top: 0.5em; }
-#wrapper code, #wrapper pre, #wrapper textarea, #wrapper input { font-family: Monaco, Deja Vu Sans Mono, Inconsolata, Consolas, monospace; }
+#wrapper code, #wrapper pre, #wrapper textarea { font-family: Monaco, Deja Vu Sans Mono, Inconsolata, Consolas, monospace; }
 #wrapper pre { margin: 0.5em; padding: 0.5em; }
 #wrapper form.login { margin: 0 8em; }
 #wrapper form p { margin-top: 1em; position: relative; }
@@ -48,9 +48,8 @@ a:hover { text-decoration: underline; }
 #wrapper form fieldset p.normal { margin-top: 1em; }
 #wrapper form fieldset p label { width: 6.7em; }
 #wrapper form p.submit { margin-top: 1em; }
+#wrapper form p.submit span { display: block; float: left; line-height: 26px; margin-left: 10px; }
 #wrapper form p.submit:after { display: block; clear: both; float: none; content: "."; text-indent: -9999em; text-align: left; }
-#wrapper form p.submit.destroy button, #wrapper form p.submit.manual-build button { float: none; display: inline; }
-#wrapper form p.submit.manual-build button { margin-right: 0; }
 #wrapper #new { width: 100%; text-align: right; }
 #wrapper #projects { margin: 1em 0 2em; border-top: 1px solid silver; }
 #wrapper #projects.done li { background-color: #dddddd !important; }
@@ -59,10 +58,12 @@ a:hover { text-decoration: underline; }
 #wrapper #projects li { position: relative; border-bottom: 1px solid silver; }
 #wrapper #projects li.odd { background: #e6e6e6; }
 #wrapper #projects li div { padding: 0.25em; display: block; }
-#wrapper #projects li a { font-size: 2em; line-height: 1.2em; font-weight: bold; }
+#wrapper #projects li .item { font-size: 2em; line-height: 1.2em; font-weight: bold; }
 #wrapper #projects li span { font-size: 0.6em; margin-top: 6px; float: right; }
-#wrapper #projects li span a { color: #aaaaaa !important; }
 #wrapper #projects li .meta { position: absolute; right: 0.6em; top: 1.5em; font-size: 0.8em; color: #999999; text-align: right; }
+
+.button { height: 24px; line-height: 26px; text-align: center; display: block; float: left; padding: 0 20px; margin-left: 0px; font-family: helvetica, arial, freesans, clean, sans-serif; font-weight: bold; font-size: 12px; color: #333; font-weight: normal; text-shadow: 1px 1px 0 white; white-space: nowrap; border: none; overflow: visible; background: #dddddd; /*filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#e1e1e1'); */ background: -webkit-gradient(linear, 0% 0, 0% 100%, from(white), to(#e1e1e1)); background: -moz-linear-gradient(-90deg, white, #e1e1e1); border-bottom: 1px solid #ebebeb; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); cursor: pointer; -webkit-font-smoothing: subpixel-antialiased !important; }
+.button:hover { color: white; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3); border-bottom-color: #0770a0; background: #0770a0; text-decoration: none; /* filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0ca6dd',endColorstr='#0770a0'); background:-webkit-gradient(linear,0% 0,0% 100%,from(#0ca6dd),to(#0770a0)); background:-moz-linear-gradient(-90deg,#0ca6dd,#0770a0); */ }
 
 #footer { padding: 1.5em 2.5em; border-top: 1px solid #cccccc; font-size: 0.8em; width: 50em !important; color: #666666; text-align: right; }
 #footer strong { font-weight: bold; }

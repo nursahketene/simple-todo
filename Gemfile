@@ -10,12 +10,13 @@ gem "authlogic", :git => 'git://github.com/odorcicd/authlogic.git', :branch => '
 
 
 group :test, :development do
-  gem "rspec-rails", ">= 2.0.0.beta.22"
+  gem "rspec-rails", ">= 2.0.0.rc"
   gem "factory_girl_rails"
   
   gem "ci_reporter", :git => "git://github.com/tylerkovacs/ci_reporter.git"
   
-  gem "cucumber"
-  gem "cucumber-rails"
-  gem "capybara"
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
 end

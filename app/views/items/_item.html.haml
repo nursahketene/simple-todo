@@ -1,4 +1,4 @@
 %li
   .line-content
-    = link_to item.title, edit_item_path(item), :remote => true
-    %span= link_to t('items.actions.done'), done_item_path(item) unless item.done
+    = link_to "Muista: #{item.title}", edit_item_path(item), :class => "item", :remote => true
+    %span= link_to t('items.actions.done'), done_item_path(item), :class => "button" unless item.done
