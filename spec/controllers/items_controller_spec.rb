@@ -53,5 +53,88 @@ describe ItemsController do
     end
   end
 
+  describe "POST create" do
+
+    describe "with valid params" do
+      it "assigns a newly created item as @item" do
+        Item.stub(:new).with({'these' => 'params'}) { mock_item(:save => true) }
+        post :create, :item => {'these' => 'params'}
+        assigns(:item).should be(mock_item)
+      end
+
+      it "redirects to the created item" do
+        Item.stub(:new) { mock_item(:save => true) }
+        post :create, :item => {}
+        response.should redirect_to(items_url)
+      end
+    end
+
+    describe "with invalid params" do
+      it "assigns a newly created but unsaved item as @item" do
+        Item.stub(:new).with({'these' => 'params'}) { mock_item(:save => false) }
+        post :create, :item => {'these' => 'params'}
+        assigns(:item).should be(mock_item)
+      end
+
+      it "re-renders the 'new' template" do
+        Item.stub(:new) { mock_item(:save => false) }
+        post :create, :item => {}
+        response.should render_template("new")
+      end
+    end
+
+  end
+
+  describe "PUT update" do
+
+    describe "with valid params" do
+      it "updates the requested item" do
+        Item.should_receive(:find).with("37") { mock_item }
+        mock_item.should_receive(:update_attributes).with({'these' => 'params'})
+        put :update, :id => "37", :item => {'these' => 'params'}
+      end
+
+      it "assigns the requested item as @item" do
+        Item.stub(:find) { mock_item(:update_attributes => true) }
+        put :update, :id => "1"
+        assigns(:item).should be(mock_item)
+      end
+
+      it "redirects to the item" do
+        Item.stub(:find) { mock_item(:update_attributes => true) }
+        put :update, :id => "1"
+        response.should redirect_to(items_url)
+      end
+    end
+
+    describe "with invalid params" do
+      it "assigns the item as @item" do
+        Item.stub(:find) { mock_item(:update_attributes => false) }
+        put :update, :id => "1"
+        assigns(:item).should be(mock_item)
+      end
+
+      it "re-renders the 'edit' template" do
+        Item.stub(:find) { mock_item(:update_attributes => false) }
+        put :update, :id => "1"
+        response.should render_template("edit")
+      end
+    end
+
+  end
+
+  describe "DELETE destroy" do
+    it "destroys the requested item" do
+      Item.should_receive(:find).with("37") { mock_item }
+      mock_item.should_receive(:destroy)
+      delete :destroy, :id => "37"
+    end
+
+    it "redirects to the items list" do
+      Item.stub(:find) { mock_item }
+      delete :destroy, :id => "1"
+      response.should redirect_to(items_url)
+    end
+  end
 
 end
