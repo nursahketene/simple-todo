@@ -1,21 +1,21 @@
-source 'http://gemcutter.org'
+source "http://gemcutter.org"
 
-gem 'rails', '3.0.3'
+gem "rails", "3.0.7"
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem "sqlite3-ruby", :require => "sqlite3"
 
 gem "haml"
+gem "sass"
 
-gem "authlogic", :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
+gem "authlogic", :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
 
 
 group :test, :development do
-  gem "rspec-rails", ">= 2.2.1"
+  gem "rspec-rails"
   gem "factory_girl_rails"
   gem "ci_reporter"
   
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'cucumber-rails'
-  gem 'cucumber'
+  gem "capybara"
+  gem "cucumber-rails"
+  gem "cucumber", "0.10.0"
 end
