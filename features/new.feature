@@ -9,4 +9,4 @@ Feature: Adding a new Todo Item
     When I follow "Add a New Task"
       And I fill in "title" with "Buy Milk"
       And I press "Save"
-    Then I should see "Remember to: OSta maitoa"
+    Then I should see "Remember to: Buy Milk"
