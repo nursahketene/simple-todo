@@ -1,4 +1,8 @@
 fi:
+  application:
+    title: "Todo Application"
+    add_name_to_username: "n tehtävät"
+    
   action:
     login: "Kirjaudu"
     logout: "Kirjaudu ulos"
