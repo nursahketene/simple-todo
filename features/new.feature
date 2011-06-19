@@ -6,8 +6,8 @@ Feature: Adding a new Todo Item
   @javascript
   Scenario: Adding a new Item
     Given I am an authenticated user
-    When I follow "Lisää uusi tehtävä"
-      And I fill in "title" with "Osta Maitoa"
-      And I press "Tallenna"
-    Then I should see "Muista: Osta Maitoa"
+    When I follow "Add a New Task"
+      And I fill in "title" with "Buy Milk"
+      And I press "Save"
+    Then I should see "Remember to: Buy Milk"
 

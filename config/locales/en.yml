@@ -1,22 +1,30 @@
 en:
+  application:
+    title: "Todo Application"
+  
   action:
-    login: "Kirjaudu"
-    logout: "Kirjaudu ulos"
-    save: "Tallenna"
+    login: "Login"
+    logout: "Log out"
+    save: "Save"
+    or: "or"
+    cancel: "Cancel"
   
   user_sessions:
     notice:
-      logout: "Kirjauduit ulos järjestelmästä"
+      logout: "You have successfully logged out"
     new:
-      login: "Kirjaudu järjestelmään"
+      login: "Login with your username and password"
 
   items:
     actions:
-      new: "Lisää uusi tehtävä"
-      done: "Valmis"
+      new: "Add a New Task"
+      done: "Task Ready"
+    show:
+      no_open_tasks: "There are no open tasks"
+      remember_to: "Remember to"
     form:
-      title: "Tehtävä"
+      title: "Task"
     new:
-      header: "Uusi tehtävä"
+      header: "Add a New Task"
     edit:
-      header: "Muokkaa tehtävää"
+      header: "Edit Task"

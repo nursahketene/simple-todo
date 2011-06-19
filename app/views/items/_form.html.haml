@@ -8,4 +8,6 @@
 
   %p.submit
     = f.submit t('action.save'), :class=> 'button'
-    %span tai #{link_to_function "Peruuta", "hideEditor()"}
+    %span
+      = t('action.or')
+      = link_to_function t('action.cancel'), "hideEditor()"

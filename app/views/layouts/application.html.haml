@@ -3,7 +3,7 @@
   %head
     %meta{:content => "text/html;charset=UTF-8", "http-equiv" => "content-type"}
     %meta{ :content => "en", :"http-equiv" => "Content-Language" }
-    %title EfiCode Todo
+    %title Todo Application
     
     = javascript_include_tag :defaults
     = csrf_meta_tag
@@ -16,7 +16,7 @@
         - if current_user
           = current_user.login
         -else
-          EfiCode Tehtävämuistio
+          = t('application.title')
       %address.watermark
         = link_to t('action.logout'), user_session_path, :method => :delete if current_user
 

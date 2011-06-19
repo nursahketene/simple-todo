@@ -2,7 +2,7 @@
 #new= link_to t('items.actions.new'), new_item_path, :remote => true
 
 - if @todo.blank?
-  %h3 Ei tekemättömiä tehtäviä
+  %h3= t('items.show.no_open_tasks')
 - else
   %ul#projects.todo
     = render :partial => 'item', :collection => @todo

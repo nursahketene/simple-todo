@@ -1,0 +1,24 @@
+fi:
+  action:
+    login: "Kirjaudu"
+    logout: "Kirjaudu ulos"
+    save: "Tallenna"
+  
+  user_sessions:
+    notice:
+      logout: "Kirjauduit ulos järjestelmästä"
+    new:
+      login: "Kirjaudu järjestelmään"
+
+  items:
+    actions:
+      new: "Lisää uusi tehtävä"
+      done: "Valmis"
+    show:
+      no_open_tasks: "Ei tekemättömiä tehtäviä"
+    form:
+      title: "Tehtävä"
+    new:
+      header: "Uusi tehtävä"
+    edit:
+      header: "Muokkaa tehtävää"
