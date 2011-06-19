@@ -10,4 +10,3 @@ Feature: Adding a new Todo Item
       And I fill in "title" with "Buy Milk"
       And I press "Save"
     Then I should see "Remember to: Buy Milk"
-
