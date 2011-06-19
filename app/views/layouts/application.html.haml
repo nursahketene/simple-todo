@@ -14,8 +14,8 @@
     #header
       %h1
         - if current_user
-          = current_user.login
-        -else
+          = "#{current_user.login}#{t('application.add_name_to_username')}"
+        - else
           = t('application.title')
       %address.watermark
         = link_to t('action.logout'), user_session_path, :method => :delete if current_user

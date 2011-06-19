@@ -1,6 +1,7 @@
 en:
   application:
     title: "Todo Application"
+    add_name_to_username: "'s tasks"
   
   action:
     login: "Login"

@@ -10,5 +10,5 @@ Feature: authentication
 
   Scenario: Logging Out
     Given I am an authenticated user
-    When I follow "Log out"
+    When I go to "/logout"
     Then I should see "Login with your username and password"
