@@ -1,4 +1,4 @@
-Feature: authentication
+Feature: User Authentication
   As any user
   I have to log in
   So that I can use the system
