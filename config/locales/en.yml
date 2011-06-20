@@ -22,7 +22,7 @@ en:
       done: "Task Ready"
     show:
       no_open_tasks: "There are no open tasks"
-      remember_to: "Remember to"
+      remember_to: "Remember"
     form:
       title: "Task"
     new:
