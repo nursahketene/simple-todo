@@ -23,5 +23,7 @@ begin
     task :build => ["ci:setup:rspec", "spec", "ci:setup:cucumber", "cucumber"]
   end
   
+  task :ci => :cucumber
+  
 rescue LoadError
 end
