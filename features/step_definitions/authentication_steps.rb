@@ -1,10 +1,10 @@
-Given /^I am not authenticated$/ do
+Given /^I log out$/ do
   visit('/logout')
 end
 
-Given /^I login to the system$/ do
-  And %{I go to the home page}
-  And %{I fill in "user_login" with "mrako"}
-  And %{I fill in "user_pass" with "test"}
-  And %{I press "Login"}
+Given /^I have authenticated as "([^"]*)"$/ do |username|
+  step %{I go to the home page}
+  step %{I fill in "user_login" with "#{username}"}
+  step %{I fill in "user_pass" with "test"}
+  step %{I press "Login"}
 end
