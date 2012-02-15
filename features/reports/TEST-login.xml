@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="authentication" tests="2" time="2.091518">
+<testcase classname="authentication.Logging In" name="Logging In" time="1.377926">
+</testcase>
+<testcase classname="authentication.Logging Out" name="Logging Out" time="0.713592">
+</testcase>
+</testsuite>
