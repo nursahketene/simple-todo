@@ -16,3 +16,6 @@ public/system
 **/*(Autosaved)*
 public/stylesheets/compiled
 solr/data
+*~
+*.swp
+

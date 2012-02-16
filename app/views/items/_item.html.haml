@@ -3,5 +3,5 @@
     - if !item.done?
       = link_to "#{t('items.show.remember_to')}: #{item.title}", edit_item_path(item), :class => "item", :remote => true
     - else 
-      = link_to "#{t('items.actions.done')}: #{item.title}", edit_item_path(item), :class => "item", :remote => true    
+      = link_to "#{t('items.show.done')}: #{item.title}", edit_item_path(item), :class => "item", :remote => true    
     %span= link_to t('items.actions.done'), done_item_path(item), :class => "button" unless item.done

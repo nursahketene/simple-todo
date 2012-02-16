@@ -19,10 +19,11 @@ en:
   items:
     actions:
       new: "Add a New Task"
-      done: "Task Ready"
+      done: "Done"
     show:
       no_open_tasks: "There are no open tasks"
-      remember_to: "Remember"
+      remember_to: "To-Do"
+      done: "Done"
     form:
       title: "Task"
     new:
