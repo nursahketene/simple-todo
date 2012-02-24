@@ -2,13 +2,13 @@ class ItemsController < ApplicationController
   before_filter :require_user
   
   def index
-    @todo = Item.todo
-    @done = Item.done
+    @todo = Item.todo.order('updated_at DESC')
+    @done = Item.done.order('updated_at DESC')
   end
   
   def done
     @item = Item.find(params[:id])
-    @item.update_attributes(:done => true)
+    @item.update_attribute(:done, true)
     redirect_to items_path
   end
 
