@@ -35,7 +35,7 @@ a {
     text-decoration: underline; } }
 
 #header, #editor, #content, #footer {
-  width: 40em;
+  width: 960px;
   margin: 0 auto;
   background: $content_bg;
   padding: 0 2em;
@@ -232,6 +232,16 @@ a {
         font-size: 0.8em;
         color: $light_color;
         text-align: right; } } } }
+ .date{
+  height:24px;
+  line-height:26px;
+  float:left;
+  font-family:helvetica, arial, freesans, clean, sans-serif;
+  font-size:18px;
+  width:90px;
+
+}
+
 
 .button {
   height: 24px;
