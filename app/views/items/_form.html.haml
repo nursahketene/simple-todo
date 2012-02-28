@@ -1,7 +1,7 @@
 = form_for(@item) do |f|
   
 
-  %h2= title
+  %h2= @title unless @title == ""
   
   %p.required
     = f.text_field :title, :size => nil, :id => "title", :class => "text title"
