@@ -2,9 +2,9 @@
 = form_for @user_session, :url => user_session_path, :html => {:class => 'login'} do |f|
   %p.title= t '.login'
   %p.required
-    = f.text_field 'login', :size => nil, :id => 'user_login', :class => "text"
+    = f.text_field 'login', :size => nil, :id => 'user_login', :class => "text", :placeholder => "User Name"
   %p.required
-    = f.password_field 'password', :size => nil, :id => 'user_pass', :class => "text"
+    = f.password_field 'password', :size => nil, :id => 'user_pass', :class => "text", :placeholder => "Password"
   
   %p.submit
     = f.submit t('action.login'), :class=> 'button'
