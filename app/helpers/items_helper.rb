@@ -9,5 +9,13 @@ module ItemsHelper
 			item.update_at.strftime("%d %b %Y")
 		end
 	end
-
+    
+	def button_name(item)
+		if item.done?
+			button = "Undo"
+		else
+			button = "Done"
+		end
+	
+	end
 end
