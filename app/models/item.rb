@@ -1,6 +1,8 @@
 class Item < ActiveRecord::Base
   
-  
-  scope :todo, where(:done => false)
-  scope :done, where(:done => true)
+  scope :default_order, order(:updated_at)
+  scope :todo, default_order.where(:done => false)
+  scope :done, default_order.where(:done => true)
+
+  validates_presence_of :title
 end
