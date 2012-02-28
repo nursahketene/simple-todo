@@ -105,7 +105,9 @@ a {
     padding: 0.5em; }
   form {
     &.login {
-      margin: 0 8em; }
+      margin-left:auto;
+	  margin-right:auto;
+	  width:480px;}
     p {
       margin-top: 1em;
       position: relative;
@@ -117,7 +119,12 @@ a {
       right: 0; }
     input.text, textarea, select {
       padding: 0.2em 0.4em;
-      color: $title_color; }
+      color: $title_color;
+	  border-radius:2px;
+	  border:none;
+	  width:400px;
+	  margin-left:auto;
+	  margin-right:auto;}
     input.text {
       height: 1.4em; }
     input.title {
