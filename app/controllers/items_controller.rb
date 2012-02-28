@@ -2,13 +2,18 @@ class ItemsController < ApplicationController
   before_filter :require_user
   
   def index
-    @todo = Item.todo.order('updated_at DESC')
-    @done = Item.done.order('updated_at DESC')
+    @todo = Item.todo
+    @done = Item.done
   end
   
   def done
     @item = Item.find(params[:id])
-    @item.update_attribute(:done, true)
+	if @item.done == true
+		@item.update_attribute(:done, false)
+	else 
+		@item.update_attribute(:done, true)
+	end
+
     redirect_to items_path
   end
 
@@ -30,7 +35,7 @@ class ItemsController < ApplicationController
     if @item.save
       redirect_to(items_path, :notice => 'Item was successfully created.')
     else
-      render :action => "new"
+      render :new
     end
   end
 
