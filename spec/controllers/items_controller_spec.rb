@@ -27,6 +27,12 @@ describe ItemsController do
       get :done, :id => "1"
       @item.done.should eq(true)
     end
+	it "sets the Item to state undone" do
+	  @item = Factory(:item, :done => true)
+	  Item.stub(:find) {@item}
+      get :done, :id => "1"
+	  @item.done.should eq(false)
+	end
   end
   
   describe "GET show" do
@@ -54,6 +60,13 @@ describe ItemsController do
   end
 
   describe "POST create" do
+  	describe "invalid item" do
+	  it "should not be valid without a title" do
+	    item = Item.new
+		item.title = ""
+		item.should_not be_valid
+	  end
+	end
 
     describe "with valid params" do
       it "assigns a newly created item as @item" do
