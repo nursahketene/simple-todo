@@ -12,6 +12,8 @@
   %body
 
     #header
+      %div.transparent
+        %div.logo
       %h1
         - if current_user
           = "#{current_user.login}#{t('application.add_name_to_username')}"
