@@ -28,13 +28,11 @@ This project is a sample project for:
         $cd simple-todo
         $bundle install
 
-1. Install Selenium & Robotframework
-		
-Download Robot from [here](http://code.google.com/p/robotframework/downloads/list) and run
+1. Download & Install Robotframework from [here](http://code.google.com/p/robotframework/downloads/list) and run
 
 		$sudo python setup.py install
 
-Download the latest robot selenium library from [here](http://code.google.com/p/robotframework-seleniumlibrary/downloads/list) and run
+1. Download & Install the latest robot selenium library from [here](http://code.google.com/p/robotframework-seleniumlibrary/downloads/list) and run
 
 		$sudo python setup.py install
 
