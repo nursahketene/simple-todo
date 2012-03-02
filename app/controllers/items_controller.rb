@@ -53,6 +53,6 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.destroy
     
-    redirect_to(items_url)
+    redirect_to root_path()
   end
 end
