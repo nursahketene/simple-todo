@@ -18,4 +18,7 @@ public/stylesheets/compiled
 solr/data
 *~
 *.swp
+robot_tests/log.html
+robot_tests/output.xml
+robot_tests/report.html
 
