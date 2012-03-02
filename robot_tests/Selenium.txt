@@ -1,0 +1,71 @@
+*** Settings ***
+Suite Setup  	Start selenium server
+Suite Teardown  Stop selenium server
+Test Setup  	Setup Application
+Test Teardown  	Log out and close browser
+Library  		Selenium Library  run_on_failure=Nothing  # #don't capture screenshots
+Library  		OperatingSystem
+
+*** Variables ***
+
+*** Test Cases ***
+Login with default user
+	Given Page Should Contain  Login with your username and password
+	When I Log in
+	Then Page Should Contain  nursah's tasks
+
+Log Out
+	Given I Log in
+	When I Log out
+	Then Page Should Contain  Login with your username and password
+
+Add Item
+	Given I Log in
+	When I Click Add a new task button	
+    And Input Text  title  item1
+    And Click button  Save 
+    Then Page Should Contain  item1
+
+Click Done
+    Given I Log in
+    When I Click Done for item
+    Then I should see item in done list
+
+Click Undo
+	Given I Log in 
+	When Click link  xpath=//a[text()="Done: item1"]/../span/a[text()="Undo"]
+	Then Page Should Contain Element  xpath=//ul[@class="todo"]/li/div/a[text()="To-Do: item1"]
+
+Delete item
+	Given I Log in
+    When Click link  xpath=//a[text()="To-Do: item1"]/../span/a[text()="Delete"]
+    Then Confirm Action
+    Then Page Should Contain  Add a New Task
+    Then Page Should Not Contain  To-Do: item1 	
+
+*** Keywords ***
+
+setup application
+	Open Browser  http://localhost:3000
+
+Log out and close browser
+    close browser
+
+I Log in
+	[Arguments]  ${user_name}=nursah  ${password}=nursahketene
+	Input text  user_login  ${user_name}
+	Input text  user_pass  ${password}
+	Click Button  Login
+
+I Log Out
+    Click Link  Log out       
+
+I Click Add a new task button
+    And Click link  Add a New Task  don't wait
+	And Wait Until Page Contains  Cancel   
+
+I Click Done for item
+    And Click link  xpath=//a[text()="To-Do: item1"]/../span/a[text()="Done"]
+
+I should see item in done list
+    Page Should Contain Element  xpath=//ul[@class="done"]/li/div/a[text()="Done: item1"]            

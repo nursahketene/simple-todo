@@ -1,0 +1,157 @@
+Feb 28, 2012 2:30:18 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+14:30:23.747 INFO - Java: Apple Inc. 20.4-b02-402
+14:30:23.749 INFO - OS: Mac OS X 10.7.3 x86_64
+14:30:23.768 INFO - v2.15.0, with Core v2.15.0. Built from revision 15105
+14:30:23.920 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+14:30:23.921 INFO - Version Jetty/5.1.x
+14:30:23.922 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+14:30:23.922 INFO - Started HttpContext[/selenium-server,/selenium-server]
+14:30:23.922 INFO - Started HttpContext[/,/]
+14:30:23.973 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@7d2452e8
+14:30:23.973 INFO - Started HttpContext[/wd,/wd]
+14:30:23.980 INFO - Started SocketListener on 0.0.0.0:4444
+14:30:23.980 INFO - Started org.openqa.jetty.jetty.Server@692a3722
+14:30:24.269 INFO - Checking Resource aliases
+14:30:24.272 INFO - Checking Resource aliases
+14:30:24.276 INFO - Command request: getNewBrowserSession[*firefox, http://localhost:3000, ] on session null
+14:30:24.279 INFO - creating new remote session
+14:30:24.300 INFO - Allocated session 641c388a978846e38e2a1e392f4b612b for http://localhost:3000, launching...
+14:30:24.394 INFO - Preparing Firefox profile...
+14:30:26.262 INFO - Launching Firefox...
+14:30:28.561 INFO - Got result: OK,641c388a978846e38e2a1e392f4b612b on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.568 INFO - Command request: setTimeout[5000.0, ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.584 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.588 INFO - Command request: open[http://localhost:3000, True] on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.805 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.813 INFO - Command request: isTextPresent[Login with your username and password, ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.843 INFO - Got result: OK,true on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.850 INFO - Command request: type[user_login, nursah] on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.859 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.865 INFO - Command request: type[user_pass, nursahketene] on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.874 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.881 INFO - Command request: getLocation[, ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.889 INFO - Got result: OK,http://localhost:3000/user_session/new on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.897 INFO - Command request: click[xpath=//input[@id="Login" or @name="Login" or @value="Login" or @src="Login" or @src="http://localhost:3000/user_session/Login"], ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.922 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:28.927 INFO - Command request: waitForPageToLoad[5000.0, ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.244 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.251 INFO - Command request: isTextPresent[nursah's tasks, ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.290 INFO - Got result: OK,true on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.297 INFO - Command request: close[, ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.322 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.326 INFO - Command request: testComplete[, ] on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.326 INFO - Killing Firefox...
+14:30:29.392 INFO - Got result: OK on session 641c388a978846e38e2a1e392f4b612b
+14:30:29.400 INFO - Command request: getNewBrowserSession[*firefox, http://localhost:3000, ] on session null
+14:30:29.400 INFO - creating new remote session
+14:30:29.401 INFO - Allocated session f1f34d5bb3c84547ab9e1cddb4edaeb2 for http://localhost:3000, launching...
+14:30:29.457 INFO - Preparing Firefox profile...
+14:30:31.267 INFO - Launching Firefox...
+14:30:33.526 INFO - Got result: OK,f1f34d5bb3c84547ab9e1cddb4edaeb2 on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.531 INFO - Command request: setTimeout[5000.0, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.545 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.549 INFO - Command request: open[http://localhost:3000, True] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.796 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.805 INFO - Command request: type[user_login, nursah] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.835 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.841 INFO - Command request: type[user_pass, nursahketene] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.848 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.855 INFO - Command request: getLocation[, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.861 INFO - Got result: OK,http://localhost:3000/user_session/new on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.866 INFO - Command request: click[xpath=//input[@id="Login" or @name="Login" or @value="Login" or @src="Login" or @src="http://localhost:3000/user_session/Login"], ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.890 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:33.895 INFO - Command request: waitForPageToLoad[5000.0, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.199 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.207 INFO - Command request: getLocation[, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.219 INFO - Got result: OK,http://localhost:3000/ on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.223 INFO - Command request: click[xpath=//a[@id="Log out" or @name="Log out" or @href="Log out" or normalize-space(descendant-or-self::text())="Log out" or @href="http://localhost:3000/Log out"], ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.240 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.246 INFO - Command request: waitForPageToLoad[5000.0, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.479 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.484 INFO - Command request: isTextPresent[Login with your username and password, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.493 INFO - Got result: OK,true on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.501 INFO - Command request: close[, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.520 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.536 INFO - Command request: testComplete[, ] on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.536 INFO - Killing Firefox...
+14:30:34.599 INFO - Got result: OK on session f1f34d5bb3c84547ab9e1cddb4edaeb2
+14:30:34.607 INFO - Command request: getNewBrowserSession[*firefox, http://localhost:3000, ] on session null
+14:30:34.607 INFO - creating new remote session
+14:30:34.608 INFO - Allocated session aa852ae102ea407e9f73acc64116e409 for http://localhost:3000, launching...
+14:30:34.655 INFO - Preparing Firefox profile...
+14:30:36.461 INFO - Launching Firefox...
+14:30:38.958 INFO - Got result: OK,aa852ae102ea407e9f73acc64116e409 on session aa852ae102ea407e9f73acc64116e409
+14:30:38.963 INFO - Command request: setTimeout[5000.0, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:38.982 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:38.986 INFO - Command request: open[http://localhost:3000, True] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.425 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:39.434 INFO - Command request: type[user_login, nursah] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.447 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:39.454 INFO - Command request: type[user_pass, nursahketene] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.463 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:39.468 INFO - Command request: getLocation[, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.473 INFO - Got result: OK,http://localhost:3000/user_session/new on session aa852ae102ea407e9f73acc64116e409
+14:30:39.478 INFO - Command request: click[xpath=//input[@id="Login" or @name="Login" or @value="Login" or @src="Login" or @src="http://localhost:3000/user_session/Login"], ] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.499 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:39.504 INFO - Command request: waitForPageToLoad[5000.0, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.821 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:39.828 INFO - Command request: getLocation[, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.841 INFO - Got result: OK,http://localhost:3000/ on session aa852ae102ea407e9f73acc64116e409
+14:30:39.845 INFO - Command request: click[xpath=//a[@id="Add a New Task" or @name="Add a New Task" or @href="Add a New Task" or normalize-space(descendant-or-self::text())="Add a New Task" or @href="http://localhost:3000/Add a New Task"], ] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.872 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:39.879 INFO - Command request: isTextPresent[Cancel, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:39.905 INFO - Got result: OK,false on session aa852ae102ea407e9f73acc64116e409
+14:30:40.111 INFO - Command request: isTextPresent[Cancel, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.136 INFO - Got result: OK,true on session aa852ae102ea407e9f73acc64116e409
+14:30:40.143 INFO - Command request: type[title, item1] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.149 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:40.158 INFO - Command request: getLocation[, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.164 INFO - Got result: OK,http://localhost:3000/ on session aa852ae102ea407e9f73acc64116e409
+14:30:40.168 INFO - Command request: click[xpath=//input[@id="Save" or @name="Save" or @value="Save" or @src="Save" or @src="http://localhost:3000/Save"], ] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.183 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:40.186 INFO - Command request: waitForPageToLoad[5000.0, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.534 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:40.540 INFO - Command request: isTextPresent[item1, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.568 INFO - Got result: OK,true on session aa852ae102ea407e9f73acc64116e409
+14:30:40.575 INFO - Command request: close[, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.593 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:40.597 INFO - Command request: testComplete[, ] on session aa852ae102ea407e9f73acc64116e409
+14:30:40.597 INFO - Killing Firefox...
+14:30:40.661 INFO - Got result: OK on session aa852ae102ea407e9f73acc64116e409
+14:30:40.668 INFO - Command request: getNewBrowserSession[*firefox, http://localhost:3000, ] on session null
+14:30:40.669 INFO - creating new remote session
+14:30:40.669 INFO - Allocated session 630478ae2819491290c9234ff7f478f4 for http://localhost:3000, launching...
+14:30:40.704 INFO - Preparing Firefox profile...
+14:30:48.311 INFO - Launching Firefox...
+14:30:50.575 INFO - Got result: OK,630478ae2819491290c9234ff7f478f4 on session 630478ae2819491290c9234ff7f478f4
+14:30:50.579 INFO - Command request: setTimeout[5000.0, ] on session 630478ae2819491290c9234ff7f478f4
+14:30:50.594 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:50.598 INFO - Command request: open[http://localhost:3000, True] on session 630478ae2819491290c9234ff7f478f4
+14:30:50.798 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:50.805 INFO - Command request: type[user_login, nursah] on session 630478ae2819491290c9234ff7f478f4
+14:30:50.820 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:50.826 INFO - Command request: type[user_pass, nursahketene] on session 630478ae2819491290c9234ff7f478f4
+14:30:50.837 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:50.844 INFO - Command request: getLocation[, ] on session 630478ae2819491290c9234ff7f478f4
+14:30:50.851 INFO - Got result: OK,http://localhost:3000/user_session/new on session 630478ae2819491290c9234ff7f478f4
+14:30:50.856 INFO - Command request: click[xpath=//input[@id="Login" or @name="Login" or @value="Login" or @src="Login" or @src="http://localhost:3000/user_session/Login"], ] on session 630478ae2819491290c9234ff7f478f4
+14:30:50.877 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:50.881 INFO - Command request: waitForPageToLoad[5000.0, ] on session 630478ae2819491290c9234ff7f478f4
+14:30:51.204 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:51.210 INFO - Command request: click[xpath=//a[text()="To-Do: foo"]/../span/a[text()="Done"], ] on session 630478ae2819491290c9234ff7f478f4
+14:30:51.235 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:51.239 INFO - Command request: waitForPageToLoad[5000.0, ] on session 630478ae2819491290c9234ff7f478f4
+14:30:51.603 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:51.609 INFO - Command request: isElementPresent[xpath=//ul[@class="done"]/li/div/a[text()="Done: foo"], ] on session 630478ae2819491290c9234ff7f478f4
+14:30:51.628 INFO - Got result: OK,true on session 630478ae2819491290c9234ff7f478f4
+14:30:51.633 INFO - Command request: close[, ] on session 630478ae2819491290c9234ff7f478f4
+14:30:51.650 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:51.654 INFO - Command request: testComplete[, ] on session 630478ae2819491290c9234ff7f478f4
+14:30:51.655 INFO - Killing Firefox...
+14:30:51.717 INFO - Got result: OK on session 630478ae2819491290c9234ff7f478f4
+14:30:51.723 INFO - Command request: shutDownSeleniumServer[, ] on session null
+14:30:51.723 INFO - Shutdown command received
+14:30:51.724 INFO - initiating shutdown
+14:30:51.724 INFO - Got result: OK on session null
+14:30:52.226 INFO - Shutting down...
