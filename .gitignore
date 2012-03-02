@@ -21,4 +21,8 @@ solr/data
 robot_tests/log.html
 robot_tests/output.xml
 robot_tests/report.html
-
+robot_tests/selenium_server_log.txt
+log.html
+output.xml
+report.html
+selenium_server_log.txt
