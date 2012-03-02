@@ -146,7 +146,7 @@ describe ItemsController do
     it "redirects to the items list" do
       Item.stub(:find) { mock_item }
       delete :destroy, :id => "1"
-      response.should redirect_to(items_url)
+      response.should redirect_to(root_url)
     end
   end
 
