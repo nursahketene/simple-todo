@@ -9,4 +9,4 @@
         %span{:class => "date"}= date_status(item)
       = link_to "#{t('items.show.done')}: #{item.title}", edit_item_path(item), :class => "item", :remote => true    
     %span= link_to button_name(item), done_item_path(item), :class => "button"
-    %span= link_to "Delete", @item, :method => :delte, :confirm => "Are you sure", :class => "button delete"
+    %span= link_to "Delete", item_path(item), :method => :delete, :confirm => "Are you sure", :class => "button delete"
