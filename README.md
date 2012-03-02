@@ -28,6 +28,27 @@ This project is a sample project for:
         cd simple-todo
         bundle install
 
+1. Install Selenium
+		
+		make sure you have the jdk with
+		$java -version
+
+		make sure you have ant
+		$ant -v
+
+		download Robot from [here](http://code.google.com/p/robotframework/downloads/list)
+
+		and run
+		$sudo python setup.py install
+
+		download the latest robot selenium library from [here](http://code.google.com/p/robotframework-seleniumlibrary/downloads/list)
+
+		and run
+		sudo python setup.py install
+
+		to run robot test
+		$pybot .
+
 1. Init the Database
 
         rake db:migrate

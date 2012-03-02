@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20120301 16:46:35.493" generator="Robot 2.6.3 (Python 2.7.1 on darwin)">
+<robot generated="20120302 11:49:00.108" generator="Robot 2.6.3 (Python 2.7.1 on darwin)">
 <suite source="/Users/nursahketene/Projects/simple-todo" name="Simple-Todo">
 <doc></doc>
 <metadata>
@@ -16,9 +16,9 @@
 <doc>Starts the Selenium Server provided with SeleniumLibrary.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20120301 16:46:35.597" level="INFO">Selenium Server started with command "java -jar /Library/Python/2.7/site-packages/SeleniumLibrary/lib/selenium-server.jar -port 4444 -userExtensions /Library/Python/2.7/site-packages/SeleniumLibrary/lib/user-extensions.js -firefoxProfileTemplate /Library/Python/2.7/site-packages/SeleniumLibrary/firefoxprofile"</msg>
-<msg timestamp="20120301 16:46:35.597" html="yes" level="INFO">Selenium server log is written to &lt;a href="file:///Users/nursahketene/Projects/simple-todo/selenium_server_log.txt"&gt;/Users/nursahketene/Projects/simple-todo/selenium_server_log.txt&lt;/a&gt;.</msg>
-<status status="PASS" endtime="20120301 16:46:35.597" starttime="20120301 16:46:35.592"></status>
+<msg timestamp="20120302 11:49:00.217" level="INFO">Selenium Server started with command "java -jar /Library/Python/2.7/site-packages/SeleniumLibrary/lib/selenium-server.jar -port 4444 -userExtensions /Library/Python/2.7/site-packages/SeleniumLibrary/lib/user-extensions.js -firefoxProfileTemplate /Library/Python/2.7/site-packages/SeleniumLibrary/firefoxprofile"</msg>
+<msg timestamp="20120302 11:49:00.217" html="yes" level="INFO">Selenium server log is written to &lt;a href="file:///Users/nursahketene/Projects/simple-todo/selenium_server_log.txt"&gt;/Users/nursahketene/Projects/simple-todo/selenium_server_log.txt&lt;/a&gt;.</msg>
+<status status="PASS" endtime="20120302 11:49:00.218" starttime="20120302 11:49:00.213"></status>
 </kw>
 <test name="Login with default user" timeout="">
 <doc></doc>
@@ -31,18 +31,18 @@
 <arguments>
 <arg>http://localhost:3000</arg>
 </arguments>
-<msg timestamp="20120301 16:46:46.166" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
-<status status="PASS" endtime="20120301 16:46:46.166" starttime="20120301 16:46:35.601"></status>
+<msg timestamp="20120302 11:49:10.778" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20120302 11:49:10.779" starttime="20120302 11:49:00.220"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:46.167" starttime="20120301 16:46:35.599"></status>
+<status status="PASS" endtime="20120302 11:49:10.779" starttime="20120302 11:49:00.219"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Given Page Should Contain" timeout="">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Login with your username and password</arg>
 </arguments>
-<msg timestamp="20120301 16:46:46.205" level="INFO">Current page contains text 'Login with your username and password'.</msg>
-<status status="PASS" endtime="20120301 16:46:46.205" starttime="20120301 16:46:46.168"></status>
+<msg timestamp="20120302 11:49:10.820" level="INFO">Current page contains text 'Login with your username and password'.</msg>
+<status status="PASS" endtime="20120302 11:49:10.820" starttime="20120302 11:49:10.780"></status>
 </kw>
 <kw type="kw" name="When I Log in" timeout="">
 <doc></doc>
@@ -54,8 +54,8 @@
 <arg>user_login</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20120301 16:46:46.220" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
-<status status="PASS" endtime="20120301 16:46:46.220" starttime="20120301 16:46:46.207"></status>
+<msg timestamp="20120302 11:49:10.840" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
+<status status="PASS" endtime="20120302 11:49:10.841" starttime="20120302 11:49:10.822"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Input Text" timeout="">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -63,26 +63,26 @@
 <arg>user_pass</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20120301 16:46:46.235" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
-<status status="PASS" endtime="20120301 16:46:46.236" starttime="20120301 16:46:46.221"></status>
+<msg timestamp="20120302 11:49:10.873" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
+<status status="PASS" endtime="20120302 11:49:10.874" starttime="20120302 11:49:10.841"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Click Button" timeout="">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20120301 16:46:46.560" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20120301 16:46:46.561" starttime="20120301 16:46:46.236"></status>
+<msg timestamp="20120302 11:49:11.314" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20120302 11:49:11.314" starttime="20120302 11:49:10.874"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:46.561" starttime="20120301 16:46:46.206"></status>
+<status status="PASS" endtime="20120302 11:49:11.315" starttime="20120302 11:49:10.821"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Then Page Should Contain" timeout="">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>nursah's tasks</arg>
 </arguments>
-<msg timestamp="20120301 16:46:46.573" level="INFO">Current page contains text 'nursah's tasks'.</msg>
-<status status="PASS" endtime="20120301 16:46:46.574" starttime="20120301 16:46:46.561"></status>
+<msg timestamp="20120302 11:49:11.329" level="INFO">Current page contains text 'nursah's tasks'.</msg>
+<status status="PASS" endtime="20120302 11:49:11.330" starttime="20120302 11:49:11.315"></status>
 </kw>
 <kw type="teardown" name="Log out and close browser" timeout="">
 <doc></doc>
@@ -92,13 +92,13 @@
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:46:46.673" starttime="20120301 16:46:46.575"></status>
+<status status="PASS" endtime="20120302 11:49:11.426" starttime="20120302 11:49:11.331"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:46.673" starttime="20120301 16:46:46.574"></status>
+<status status="PASS" endtime="20120302 11:49:11.426" starttime="20120302 11:49:11.330"></status>
 </kw>
 <tags>
 </tags>
-<status status="PASS" endtime="20120301 16:46:46.673" critical="yes" starttime="20120301 16:46:35.598"></status>
+<status status="PASS" endtime="20120302 11:49:11.426" critical="yes" starttime="20120302 11:49:00.218"></status>
 </test>
 <test name="Log Out" timeout="">
 <doc></doc>
@@ -111,10 +111,10 @@
 <arguments>
 <arg>http://localhost:3000</arg>
 </arguments>
-<msg timestamp="20120301 16:46:51.097" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
-<status status="PASS" endtime="20120301 16:46:51.097" starttime="20120301 16:46:46.676"></status>
+<msg timestamp="20120302 11:49:15.793" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20120302 11:49:15.793" starttime="20120302 11:49:11.429"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:51.098" starttime="20120301 16:46:46.675"></status>
+<status status="PASS" endtime="20120302 11:49:15.794" starttime="20120302 11:49:11.428"></status>
 </kw>
 <kw type="kw" name="Given I Log in" timeout="">
 <doc></doc>
@@ -126,8 +126,8 @@
 <arg>user_login</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20120301 16:46:51.131" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
-<status status="PASS" endtime="20120301 16:46:51.132" starttime="20120301 16:46:51.100"></status>
+<msg timestamp="20120302 11:49:15.842" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
+<status status="PASS" endtime="20120302 11:49:15.843" starttime="20120302 11:49:15.796"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Input Text" timeout="">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -135,18 +135,18 @@
 <arg>user_pass</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20120301 16:46:51.144" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
-<status status="PASS" endtime="20120301 16:46:51.144" starttime="20120301 16:46:51.133"></status>
+<msg timestamp="20120302 11:49:15.855" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
+<status status="PASS" endtime="20120302 11:49:15.855" starttime="20120302 11:49:15.844"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Click Button" timeout="">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20120301 16:46:51.453" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20120301 16:46:51.453" starttime="20120301 16:46:51.144"></status>
+<msg timestamp="20120302 11:49:16.202" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20120302 11:49:16.202" starttime="20120302 11:49:15.855"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:51.453" starttime="20120301 16:46:51.099"></status>
+<status status="PASS" endtime="20120302 11:49:16.203" starttime="20120302 11:49:15.794"></status>
 </kw>
 <kw type="kw" name="When I Log out" timeout="">
 <doc></doc>
@@ -157,18 +157,18 @@
 <arguments>
 <arg>Log out</arg>
 </arguments>
-<msg timestamp="20120301 16:46:51.752" level="INFO">Clicking link 'Log out'.</msg>
-<status status="PASS" endtime="20120301 16:46:51.752" starttime="20120301 16:46:51.454"></status>
+<msg timestamp="20120302 11:49:16.517" level="INFO">Clicking link 'Log out'.</msg>
+<status status="PASS" endtime="20120302 11:49:16.517" starttime="20120302 11:49:16.205"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:51.752" starttime="20120301 16:46:51.454"></status>
+<status status="PASS" endtime="20120302 11:49:16.518" starttime="20120302 11:49:16.204"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Then Page Should Contain" timeout="">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Login with your username and password</arg>
 </arguments>
-<msg timestamp="20120301 16:46:51.782" level="INFO">Current page contains text 'Login with your username and password'.</msg>
-<status status="PASS" endtime="20120301 16:46:51.783" starttime="20120301 16:46:51.753"></status>
+<msg timestamp="20120302 11:49:16.553" level="INFO">Current page contains text 'Login with your username and password'.</msg>
+<status status="PASS" endtime="20120302 11:49:16.554" starttime="20120302 11:49:16.518"></status>
 </kw>
 <kw type="teardown" name="Log out and close browser" timeout="">
 <doc></doc>
@@ -178,13 +178,13 @@
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:46:51.888" starttime="20120301 16:46:51.785"></status>
+<status status="PASS" endtime="20120302 11:49:16.656" starttime="20120302 11:49:16.555"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:51.889" starttime="20120301 16:46:51.783"></status>
+<status status="PASS" endtime="20120302 11:49:16.656" starttime="20120302 11:49:16.554"></status>
 </kw>
 <tags>
 </tags>
-<status status="PASS" endtime="20120301 16:46:51.890" critical="yes" starttime="20120301 16:46:46.674"></status>
+<status status="PASS" endtime="20120302 11:49:16.657" critical="yes" starttime="20120302 11:49:11.427"></status>
 </test>
 <test name="Add Item" timeout="">
 <doc></doc>
@@ -197,10 +197,10 @@
 <arguments>
 <arg>http://localhost:3000</arg>
 </arguments>
-<msg timestamp="20120301 16:46:56.232" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
-<status status="PASS" endtime="20120301 16:46:56.232" starttime="20120301 16:46:51.891"></status>
+<msg timestamp="20120302 11:49:21.007" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20120302 11:49:21.008" starttime="20120302 11:49:16.659"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:56.232" starttime="20120301 16:46:51.891"></status>
+<status status="PASS" endtime="20120302 11:49:21.008" starttime="20120302 11:49:16.658"></status>
 </kw>
 <kw type="kw" name="Given I Log in" timeout="">
 <doc></doc>
@@ -212,8 +212,8 @@
 <arg>user_login</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20120301 16:46:56.265" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
-<status status="PASS" endtime="20120301 16:46:56.266" starttime="20120301 16:46:56.235"></status>
+<msg timestamp="20120302 11:49:21.041" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
+<status status="PASS" endtime="20120302 11:49:21.041" starttime="20120302 11:49:21.010"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Input Text" timeout="">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -221,18 +221,18 @@
 <arg>user_pass</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20120301 16:46:56.277" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
-<status status="PASS" endtime="20120301 16:46:56.277" starttime="20120301 16:46:56.266"></status>
+<msg timestamp="20120302 11:49:21.051" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
+<status status="PASS" endtime="20120302 11:49:21.052" starttime="20120302 11:49:21.041"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Click Button" timeout="">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20120301 16:46:56.591" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20120301 16:46:56.591" starttime="20120301 16:46:56.278"></status>
+<msg timestamp="20120302 11:49:21.354" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20120302 11:49:21.355" starttime="20120302 11:49:21.052"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:56.591" starttime="20120301 16:46:56.233"></status>
+<status status="PASS" endtime="20120302 11:49:21.355" starttime="20120302 11:49:21.009"></status>
 </kw>
 <kw type="kw" name="When I Click Add a new task button" timeout="">
 <doc></doc>
@@ -244,17 +244,17 @@
 <arg>Add a New Task</arg>
 <arg>don't wait</arg>
 </arguments>
-<msg timestamp="20120301 16:46:56.645" level="INFO">Clicking link 'Add a New Task'.</msg>
-<status status="PASS" endtime="20120301 16:46:56.645" starttime="20120301 16:46:56.593"></status>
+<msg timestamp="20120302 11:49:21.412" level="INFO">Clicking link 'Add a New Task'.</msg>
+<status status="PASS" endtime="20120302 11:49:21.412" starttime="20120302 11:49:21.357"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.And Wait Until Page Contains" timeout="">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Cancel</arg>
 </arguments>
-<status status="PASS" endtime="20120301 16:46:56.877" starttime="20120301 16:46:56.646"></status>
+<status status="PASS" endtime="20120302 11:49:21.649" starttime="20120302 11:49:21.413"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:56.878" starttime="20120301 16:46:56.592"></status>
+<status status="PASS" endtime="20120302 11:49:21.650" starttime="20120302 11:49:21.356"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.And Input Text" timeout="">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -262,24 +262,24 @@
 <arg>title</arg>
 <arg>item1</arg>
 </arguments>
-<msg timestamp="20120301 16:46:56.893" level="INFO">Typing text 'item1' into text field 'title'</msg>
-<status status="PASS" endtime="20120301 16:46:56.894" starttime="20120301 16:46:56.878"></status>
+<msg timestamp="20120302 11:49:21.663" level="INFO">Typing text 'item1' into text field 'title'</msg>
+<status status="PASS" endtime="20120302 11:49:21.664" starttime="20120302 11:49:21.650"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.And Click button" timeout="">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Save</arg>
 </arguments>
-<msg timestamp="20120301 16:46:57.255" level="INFO">Clicking button 'Save'.</msg>
-<status status="PASS" endtime="20120301 16:46:57.255" starttime="20120301 16:46:56.894"></status>
+<msg timestamp="20120302 11:49:22.008" level="INFO">Clicking button 'Save'.</msg>
+<status status="PASS" endtime="20120302 11:49:22.008" starttime="20120302 11:49:21.664"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Then Page Should Contain" timeout="">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>item1</arg>
 </arguments>
-<msg timestamp="20120301 16:46:57.267" level="INFO">Current page contains text 'item1'.</msg>
-<status status="PASS" endtime="20120301 16:46:57.268" starttime="20120301 16:46:57.256"></status>
+<msg timestamp="20120302 11:49:22.045" level="INFO">Current page contains text 'item1'.</msg>
+<status status="PASS" endtime="20120302 11:49:22.045" starttime="20120302 11:49:22.009"></status>
 </kw>
 <kw type="teardown" name="Log out and close browser" timeout="">
 <doc></doc>
@@ -289,13 +289,13 @@
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:46:57.357" starttime="20120301 16:46:57.269"></status>
+<status status="PASS" endtime="20120302 11:49:22.131" starttime="20120302 11:49:22.046"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:46:57.357" starttime="20120301 16:46:57.269"></status>
+<status status="PASS" endtime="20120302 11:49:22.132" starttime="20120302 11:49:22.045"></status>
 </kw>
 <tags>
 </tags>
-<status status="PASS" endtime="20120301 16:46:57.358" critical="yes" starttime="20120301 16:46:51.890"></status>
+<status status="PASS" endtime="20120302 11:49:22.132" critical="yes" starttime="20120302 11:49:16.658"></status>
 </test>
 <test name="Click Done" timeout="">
 <doc></doc>
@@ -308,10 +308,10 @@
 <arguments>
 <arg>http://localhost:3000</arg>
 </arguments>
-<msg timestamp="20120301 16:47:01.689" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
-<status status="PASS" endtime="20120301 16:47:01.689" starttime="20120301 16:46:57.360"></status>
+<msg timestamp="20120302 11:49:26.698" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20120302 11:49:26.698" starttime="20120302 11:49:22.134"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:01.690" starttime="20120301 16:46:57.359"></status>
+<status status="PASS" endtime="20120302 11:49:26.698" starttime="20120302 11:49:22.133"></status>
 </kw>
 <kw type="kw" name="Given I Log in" timeout="">
 <doc></doc>
@@ -323,8 +323,8 @@
 <arg>user_login</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20120301 16:47:01.727" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
-<status status="PASS" endtime="20120301 16:47:01.728" starttime="20120301 16:47:01.691"></status>
+<msg timestamp="20120302 11:49:26.731" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
+<status status="PASS" endtime="20120302 11:49:26.731" starttime="20120302 11:49:26.701"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Input Text" timeout="">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -332,18 +332,18 @@
 <arg>user_pass</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20120301 16:47:01.738" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
-<status status="PASS" endtime="20120301 16:47:01.739" starttime="20120301 16:47:01.728"></status>
+<msg timestamp="20120302 11:49:26.742" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
+<status status="PASS" endtime="20120302 11:49:26.743" starttime="20120302 11:49:26.732"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Click Button" timeout="">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20120301 16:47:02.087" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20120301 16:47:02.088" starttime="20120301 16:47:01.739"></status>
+<msg timestamp="20120302 11:49:27.078" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20120302 11:49:27.078" starttime="20120302 11:49:26.743"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:02.088" starttime="20120301 16:47:01.690"></status>
+<status status="PASS" endtime="20120302 11:49:27.079" starttime="20120302 11:49:26.699"></status>
 </kw>
 <kw type="kw" name="When I Click Done for item" timeout="">
 <doc></doc>
@@ -354,10 +354,10 @@
 <arguments>
 <arg>xpath=//a[text()="To-Do: item1"]/../span/a[text()="Done"]</arg>
 </arguments>
-<msg timestamp="20120301 16:47:02.449" level="INFO">Clicking link 'xpath=//a[text()="To-Do: item1"]/../span/a[text()="Done"]'.</msg>
-<status status="PASS" endtime="20120301 16:47:02.449" starttime="20120301 16:47:02.090"></status>
+<msg timestamp="20120302 11:49:27.465" level="INFO">Clicking link 'xpath=//a[text()="To-Do: item1"]/../span/a[text()="Done"]'.</msg>
+<status status="PASS" endtime="20120302 11:49:27.465" starttime="20120302 11:49:27.081"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:02.449" starttime="20120301 16:47:02.089"></status>
+<status status="PASS" endtime="20120302 11:49:27.466" starttime="20120302 11:49:27.080"></status>
 </kw>
 <kw type="kw" name="Then I should see item in done list" timeout="">
 <doc></doc>
@@ -368,10 +368,10 @@
 <arguments>
 <arg>xpath=//ul[@class="done"]/li/div/a[text()="Done: item1"]</arg>
 </arguments>
-<msg timestamp="20120301 16:47:02.460" level="INFO">Current page contains element 'xpath=//ul[@class="done"]/li/div/a[text()="Done: item1"]'.</msg>
-<status status="PASS" endtime="20120301 16:47:02.460" starttime="20120301 16:47:02.450"></status>
+<msg timestamp="20120302 11:49:27.496" level="INFO">Current page contains element 'xpath=//ul[@class="done"]/li/div/a[text()="Done: item1"]'.</msg>
+<status status="PASS" endtime="20120302 11:49:27.496" starttime="20120302 11:49:27.467"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:02.461" starttime="20120301 16:47:02.450"></status>
+<status status="PASS" endtime="20120302 11:49:27.497" starttime="20120302 11:49:27.466"></status>
 </kw>
 <kw type="teardown" name="Log out and close browser" timeout="">
 <doc></doc>
@@ -381,13 +381,13 @@
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:47:02.553" starttime="20120301 16:47:02.462"></status>
+<status status="PASS" endtime="20120302 11:49:27.592" starttime="20120302 11:49:27.499"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:02.553" starttime="20120301 16:47:02.461"></status>
+<status status="PASS" endtime="20120302 11:49:27.593" starttime="20120302 11:49:27.498"></status>
 </kw>
 <tags>
 </tags>
-<status status="PASS" endtime="20120301 16:47:02.553" critical="yes" starttime="20120301 16:46:57.358"></status>
+<status status="PASS" endtime="20120302 11:49:27.593" critical="yes" starttime="20120302 11:49:22.132"></status>
 </test>
 <test name="Click Undo" timeout="">
 <doc></doc>
@@ -400,10 +400,10 @@
 <arguments>
 <arg>http://localhost:3000</arg>
 </arguments>
-<msg timestamp="20120301 16:47:06.803" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
-<status status="PASS" endtime="20120301 16:47:06.804" starttime="20120301 16:47:02.555"></status>
+<msg timestamp="20120302 11:49:31.961" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20120302 11:49:31.961" starttime="20120302 11:49:27.595"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:06.804" starttime="20120301 16:47:02.555"></status>
+<status status="PASS" endtime="20120302 11:49:31.962" starttime="20120302 11:49:27.595"></status>
 </kw>
 <kw type="kw" name="Given I Log in" timeout="">
 <doc></doc>
@@ -415,8 +415,8 @@
 <arg>user_login</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20120301 16:47:06.836" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
-<status status="PASS" endtime="20120301 16:47:06.836" starttime="20120301 16:47:06.806"></status>
+<msg timestamp="20120302 11:49:31.994" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
+<status status="PASS" endtime="20120302 11:49:31.995" starttime="20120302 11:49:31.964"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Input Text" timeout="">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -424,34 +424,34 @@
 <arg>user_pass</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20120301 16:47:06.860" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
-<status status="PASS" endtime="20120301 16:47:06.860" starttime="20120301 16:47:06.837"></status>
+<msg timestamp="20120302 11:49:32.005" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
+<status status="PASS" endtime="20120302 11:49:32.006" starttime="20120302 11:49:31.995"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Click Button" timeout="">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20120301 16:47:07.200" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20120301 16:47:07.201" starttime="20120301 16:47:06.861"></status>
+<msg timestamp="20120302 11:49:32.368" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20120302 11:49:32.369" starttime="20120302 11:49:32.007"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:07.201" starttime="20120301 16:47:06.805"></status>
+<status status="PASS" endtime="20120302 11:49:32.369" starttime="20120302 11:49:31.962"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.When Click link" timeout="">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
 <arg>xpath=//a[text()="Done: item1"]/../span/a[text()="Undo"]</arg>
 </arguments>
-<msg timestamp="20120301 16:47:07.573" level="INFO">Clicking link 'xpath=//a[text()="Done: item1"]/../span/a[text()="Undo"]'.</msg>
-<status status="PASS" endtime="20120301 16:47:07.573" starttime="20120301 16:47:07.202"></status>
+<msg timestamp="20120302 11:49:32.730" level="INFO">Clicking link 'xpath=//a[text()="Done: item1"]/../span/a[text()="Undo"]'.</msg>
+<status status="PASS" endtime="20120302 11:49:32.730" starttime="20120302 11:49:32.369"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Then Page Should Contain Element" timeout="">
 <doc>Verifies element identified by `locator` is found from current page.</doc>
 <arguments>
 <arg>xpath=//ul[@class="todo"]/li/div/a[text()="To-Do: item1"]</arg>
 </arguments>
-<msg timestamp="20120301 16:47:07.585" level="INFO">Current page contains element 'xpath=//ul[@class="todo"]/li/div/a[text()="To-Do: item1"]'.</msg>
-<status status="PASS" endtime="20120301 16:47:07.585" starttime="20120301 16:47:07.574"></status>
+<msg timestamp="20120302 11:49:32.741" level="INFO">Current page contains element 'xpath=//ul[@class="todo"]/li/div/a[text()="To-Do: item1"]'.</msg>
+<status status="PASS" endtime="20120302 11:49:32.742" starttime="20120302 11:49:32.731"></status>
 </kw>
 <kw type="teardown" name="Log out and close browser" timeout="">
 <doc></doc>
@@ -461,13 +461,13 @@
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:47:07.681" starttime="20120301 16:47:07.587"></status>
+<status status="PASS" endtime="20120302 11:49:32.834" starttime="20120302 11:49:32.743"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:07.681" starttime="20120301 16:47:07.586"></status>
+<status status="PASS" endtime="20120302 11:49:32.834" starttime="20120302 11:49:32.742"></status>
 </kw>
 <tags>
 </tags>
-<status status="PASS" endtime="20120301 16:47:07.682" critical="yes" starttime="20120301 16:47:02.554"></status>
+<status status="PASS" endtime="20120302 11:49:32.835" critical="yes" starttime="20120302 11:49:27.594"></status>
 </test>
 <test name="Delete item" timeout="">
 <doc></doc>
@@ -480,10 +480,10 @@
 <arguments>
 <arg>http://localhost:3000</arg>
 </arguments>
-<msg timestamp="20120301 16:47:11.961" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
-<status status="PASS" endtime="20120301 16:47:11.961" starttime="20120301 16:47:07.684"></status>
+<msg timestamp="20120302 11:49:37.202" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000'</msg>
+<status status="PASS" endtime="20120302 11:49:37.203" starttime="20120302 11:49:32.838"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:11.962" starttime="20120301 16:47:07.683"></status>
+<status status="PASS" endtime="20120302 11:49:37.203" starttime="20120302 11:49:32.837"></status>
 </kw>
 <kw type="kw" name="Given I Log in" timeout="">
 <doc></doc>
@@ -495,8 +495,8 @@
 <arg>user_login</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20120301 16:47:11.996" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
-<status status="PASS" endtime="20120301 16:47:11.997" starttime="20120301 16:47:11.963"></status>
+<msg timestamp="20120302 11:49:37.236" level="INFO">Typing text 'nursah' into text field 'user_login'</msg>
+<status status="PASS" endtime="20120302 11:49:37.236" starttime="20120302 11:49:37.205"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Input Text" timeout="">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -504,48 +504,48 @@
 <arg>user_pass</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20120301 16:47:12.010" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
-<status status="PASS" endtime="20120301 16:47:12.010" starttime="20120301 16:47:11.997"></status>
+<msg timestamp="20120302 11:49:37.247" level="INFO">Typing text 'nursahketene' into text field 'user_pass'</msg>
+<status status="PASS" endtime="20120302 11:49:37.247" starttime="20120302 11:49:37.237"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Click Button" timeout="">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20120301 16:47:12.348" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20120301 16:47:12.348" starttime="20120301 16:47:12.011"></status>
+<msg timestamp="20120302 11:49:37.593" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20120302 11:49:37.593" starttime="20120302 11:49:37.248"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:12.348" starttime="20120301 16:47:11.962"></status>
+<status status="PASS" endtime="20120302 11:49:37.594" starttime="20120302 11:49:37.204"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.When Click link" timeout="">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
 <arg>xpath=//a[text()="To-Do: item1"]/../span/a[text()="Delete"]</arg>
 </arguments>
-<msg timestamp="20120301 16:47:12.698" level="INFO">Clicking link 'xpath=//a[text()="To-Do: item1"]/../span/a[text()="Delete"]'.</msg>
-<status status="PASS" endtime="20120301 16:47:12.698" starttime="20120301 16:47:12.349"></status>
+<msg timestamp="20120302 11:49:37.956" level="INFO">Clicking link 'xpath=//a[text()="To-Do: item1"]/../span/a[text()="Delete"]'.</msg>
+<status status="PASS" endtime="20120302 11:49:37.957" starttime="20120302 11:49:37.594"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Then Confirm Action" timeout="">
 <doc>Dismisses currently shown confirmation dialog and returns it's message.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:47:12.709" starttime="20120301 16:47:12.699"></status>
+<status status="PASS" endtime="20120302 11:49:37.967" starttime="20120302 11:49:37.957"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Then Page Should Contain" timeout="">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Add a New Task</arg>
 </arguments>
-<msg timestamp="20120301 16:47:12.721" level="INFO">Current page contains text 'Add a New Task'.</msg>
-<status status="PASS" endtime="20120301 16:47:12.722" starttime="20120301 16:47:12.710"></status>
+<msg timestamp="20120302 11:49:37.981" level="INFO">Current page contains text 'Add a New Task'.</msg>
+<status status="PASS" endtime="20120302 11:49:37.981" starttime="20120302 11:49:37.967"></status>
 </kw>
 <kw type="kw" name="SeleniumLibrary.Then Page Should Not Contain" timeout="">
 <doc>Verifies the current page does not contain `text`.</doc>
 <arguments>
 <arg>To-Do: item1</arg>
 </arguments>
-<msg timestamp="20120301 16:47:12.745" level="INFO">Current page does not contain text 'To-Do: item1'.</msg>
-<status status="PASS" endtime="20120301 16:47:12.745" starttime="20120301 16:47:12.723"></status>
+<msg timestamp="20120302 11:49:38.006" level="INFO">Current page does not contain text 'To-Do: item1'.</msg>
+<status status="PASS" endtime="20120302 11:49:38.006" starttime="20120302 11:49:37.982"></status>
 </kw>
 <kw type="teardown" name="Log out and close browser" timeout="">
 <doc></doc>
@@ -555,25 +555,25 @@
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:47:12.838" starttime="20120301 16:47:12.747"></status>
+<status status="PASS" endtime="20120302 11:49:38.099" starttime="20120302 11:49:38.008"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:12.839" starttime="20120301 16:47:12.746"></status>
+<status status="PASS" endtime="20120302 11:49:38.099" starttime="20120302 11:49:38.007"></status>
 </kw>
 <tags>
 </tags>
-<status status="PASS" endtime="20120301 16:47:12.839" critical="yes" starttime="20120301 16:47:07.682"></status>
+<status status="PASS" endtime="20120302 11:49:38.100" critical="yes" starttime="20120302 11:49:32.835"></status>
 </test>
 <kw type="teardown" name="SeleniumLibrary.Stop Selenium Server" timeout="">
 <doc>Stops the selenium server (and closes all browsers).</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20120301 16:47:12.845" starttime="20120301 16:47:12.840"></status>
+<status status="PASS" endtime="20120302 11:49:38.107" starttime="20120302 11:49:38.101"></status>
 </kw>
-<status status="PASS" endtime="20120301 16:47:12.846" starttime="20120301 16:46:35.521"></status>
+<status status="PASS" endtime="20120302 11:49:38.108" starttime="20120302 11:49:00.142"></status>
 </suite>
-<status status="PASS" endtime="20120301 16:47:12.847" starttime="20120301 16:46:35.519"></status>
+<status status="PASS" endtime="20120302 11:49:38.109" starttime="20120302 11:49:00.139"></status>
 </suite>
-<status status="PASS" endtime="20120301 16:47:12.848" starttime="20120301 16:46:35.493"></status>
+<status status="PASS" endtime="20120302 11:49:38.109" starttime="20120302 11:49:00.108"></status>
 </suite>
 <statistics>
 <total>
