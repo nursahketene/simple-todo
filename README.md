@@ -59,7 +59,7 @@ This project is a sample project for:
 		
 		$bundle show cucumber-rails
 
-If you wish to have more information about cucumber-rails, you can find it from [here](http://cukes.info/)
+1. If you wish to have more information about cucumber-rails, you can find it from [here](http://cukes.info/)
 	
 1. To run your cucumber tests 
 
@@ -71,7 +71,7 @@ If you wish to have more information about cucumber-rails, you can find it from 
 
 		$bundle show rspec-rails
 
-To find more information about rspec-rails visit [here](https://github.com/rspec/rspec-rails)
+1. To find more information about rspec-rails visit [here](https://github.com/rspec/rspec-rails)
 
 1. To run your rspec tests
 
